@@ -1,0 +1,53 @@
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 17px;
+  line-height: 1.6;
+}
+
+.button{ /* Click Here */
+  background: coral;
+  padding: 1em 2em;
+  color: #eee;
+}
+  .button:hover{
+    background: #333;
+  }
+
+.modal{
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0; 
+  top: 0;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  background: rgba(0,0,0,0.5);
+}
+  .modal-content{
+    background: #eee;
+    margin: 20% auto;
+    padding: 20px;
+    width: 70%;
+    box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2),
+                0 7px 20px 0 rgba(0,0,0,0.15);
+    animation-name: modalopen;
+    animation-duration: 1s;
+  }
+    @keyframes modalopen{
+      from{opacity:0}
+      to  {opacity:1}
+    }
+    
+  .close-btn{ /* X */
+    color: #ccc;
+    float: right;
+    font-size: 30px;
+    }
+    .closeBtn:hover, 
+    .closeBtn:focus{
+      color: #111;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
